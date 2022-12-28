@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = process.env.REACT_APP_URL;
+const baseURL = "https://productmanagementmernbackend-production.up.railway.app";
 
 export async function getProducts(){
   try {

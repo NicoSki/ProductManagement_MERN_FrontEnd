@@ -1,0 +1,27 @@
+#img{
+    width: 20%;
+    height: 20%;
+}
+
+nav{
+    background-color: #97B9D4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    #prod{
+        font-size: 15px;
+    }
+}
+
+#button{
+    margin-left: 47%;
+    margin-top: 5%;
+}
+
+#empty{
+    text-align: center;
+    font-weight: bold;
+}

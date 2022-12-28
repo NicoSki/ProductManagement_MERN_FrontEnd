@@ -1,0 +1,33 @@
+.load{
+    display: flex;
+    justify-content: center;
+}
+
+.load h1{
+    color: #252839;
+    font-size: 2rem;
+    position: absolute;
+}
+
+.load h1:before{
+    content: ' LOADING...';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right:  4px solid #97B9D4;
+    box-shadow: 0 0 10px 10px #97B9D4;
+    overflow: hidden;
+    color: black;
+    animation: scan 4s linear infinite;
+}
+
+@keyframes scan{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    60%, 80%{
+        width: 100%;
+    }
+}

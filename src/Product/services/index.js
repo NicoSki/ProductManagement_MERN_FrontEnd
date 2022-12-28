@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = "https://productmanagementmernbackend-production.up.railway.app";
+const baseURL = "https://productmanagementmernbackend-production.up.railway.app/mern";
 
 export async function getProducts(){
   try {

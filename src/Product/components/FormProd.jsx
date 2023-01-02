@@ -9,6 +9,7 @@ const FormProd = ({getData}) => {
     priceUnitary:'',
     size:'',
     description:'',
+    imgUrl:'',
     category:''
   });
 
@@ -22,7 +23,7 @@ const FormProd = ({getData}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getData({...formData, image: inputFileRef.current.files[0]});
+    getData(...formData);
   }
 
   return (
@@ -90,12 +91,15 @@ const FormProd = ({getData}) => {
             </Form.Select>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+       <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>*IMAGE</Form.Label>
-                <Form.Control 
-                type='file'
-                ref={inputFileRef}
-                />
+                <Form.Control
+                 type='text'
+                 placeholder='URL OF THE IMAGE'
+                 name='imgUrl'
+                 value={formData.imgUrl}
+                 onChange={handleChange}
+                 />
         </Form.Group>
         
         <Button variant="success" type="submit">

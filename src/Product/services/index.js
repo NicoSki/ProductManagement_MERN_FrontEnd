@@ -40,7 +40,7 @@ export async function saveProduct(productData){
     formData.append('size', productData.size);
     formData.append('description', productData.description);
     formData.append('category', productData.category);
-    formData.append('imgUrl', productData.image);
+    formData.append('imgUrl', productData.imgUrl);
 
     const res = await axios({
       url:`${baseURL}/products`,

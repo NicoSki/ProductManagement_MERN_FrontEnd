@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
@@ -12,8 +12,6 @@ const FormProd = ({getData}) => {
     imgUrl:'',
     category:''
   });
-
-  const inputFileRef = useRef();
 
 
   const handleChange = (e) => {

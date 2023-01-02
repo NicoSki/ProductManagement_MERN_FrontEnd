@@ -21,7 +21,7 @@ const FormProd = ({getData}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getData(...formData);
+    getData({...formData});
   }
 
   return (

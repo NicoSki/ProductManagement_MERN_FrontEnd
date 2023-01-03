@@ -33,14 +33,14 @@ export async function saveProduct(productData){
   try {
     // console.log(productData);
 
-    const formData = new FormData();
-
-    formData.append('name', productData.name);
-    formData.append('priceUnitary', productData.priceUnitary);
-    formData.append('size', productData.size);
-    formData.append('description', productData.description);
-    formData.append('category', productData.category);
-    formData.append('imgUrl', productData.imgUrl);
+   const formData = {
+      name: productData.name,
+      priceUnitary: productData.priceUnitary,
+      size:productData.size,
+      description: productData.description,
+      imgUrl: productData.imgUrl,
+      category:productData.category
+    }
 
     const res = await axios({
       url:`${baseURL}/products`,
